@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300&family=Raleway:ital,wght@1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+   <style>
+
+.admin-main{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+.admin-main h1{
+
+    word-spacing: 1.05rem;
+    margin-bottom: 11.7px;
+    font-size: 2.1rem;
+    color: rgba(21, 19, 17, 0.893);
+    font-family: 'EB Garamond', serif;
+}
+table{
+    width: 100%;
+}
+td {
+  text-align: center;
+ 
+  padding: 14px;
+  border-bottom: 1px solid rgba(21, 19, 17, 0.503);;
+  color: rgba(251, 251, 251, 0.893);
+}
+th {
+    padding: 4px;
+    color: rgba(21, 19, 17, 0.893);
+    border-bottom: 1px solid rgba(21, 19, 17, 0.503);;
+  
+}
+tr:nth-child(even) {background-color: rgba(21, 19, 17, 0.30);}
+   </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><img id="logo-img" src="logo2.png" alt=""></div>
+            <div class="rig">
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">Feedback</a>
+                    </li>
+                    <li>
+                        <a class="about-about" href='/admin'>Feedback Reviews</a>
+                    </li>
+                    <li>
+                        <a id="logou" href="publish.html">Publish</a>
+                    </li>
+                </ul>
+            </div>
+           
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="admin-main">
+            <h1>Feedbacks Captured</h1>
+            <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Capturing the essence</th>
+                  <th>Content to add</th>
+                 
+                  <th>Suggestions</th>
+                  <th>Would they return</th>
+                </tr>
+                <% feedback.forEach(item => { %>
+                <tr>
+                  <td><%= item.name %></td>
+                  <td><%= item.essence_rating %></td>
+                  <td><%= item.topics %></td>
+                  <td><%= item.suggestions %></td>
+                 
+                  <td><%= item.return %></td>
+                </tr>
+                <% }); %>
+              </table>
+            </div>
+    </section>
+    </main>
+    <script src="index.js"></script>
+</body></html>

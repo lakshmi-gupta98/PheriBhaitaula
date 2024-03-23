@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(bg3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.left {
+    font-size: 1.7rem;
+    font-family: 'Caveat', sans-serif;
+    max-width: 40vw;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 58px;
+   
+
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 28px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    
+    color: rgba(21, 19, 17, 0.71);
+    font-weight: bolder;
+}
+
+.leftSection {
+    font-size: 3.4rem;
+    font-family: 'Amita', cursive;
+}
+
+.logout {
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.logout:hover{
+    opacity: 80%;
+}
+
+.kavita {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: 'Amita', cursive;
+    font-size: 4.2rem;
+    margin-left: 160px;
+}
+
+#or {
+
+    font-size: 3.5rem;
+    font-family: 'Amita', cursive;
+    -webkit-text-stroke: 2px rgba(21, 19, 17, 0.85);
+    text-shadow: 2px 2px rgba(21, 19, 17, 0.35);;
+    color: transparent;
+    margin: 10px;
+}
+
+#orr {
+
+    font-size: 1.5rem;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    -webkit-text-stroke: 0.69px rgba(0, 0, 0, 0.854);
+
+    color: transparent;
+    margin: 14px;
+    opacity: 90%;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    width: 90%;
+}
+
+.rightSection {
+    text-align: end;
+}
+
+.firstSection div {
+    width: 30%;
+}
+
+.leftSection {
+
+    margin: 23px;
+    font-size: 4.3rem;
+    font-family: 'Amita', cursive;
+}
+
+.rightSection img {
+
+    width: 103%;
+    margin-top: 18px;
+}
+
+
+#krish {
+    text-align: center;
+    position: relative;
+    color: rgba(21, 19, 17, 0.85);
+    text-shadow: 2px 2px rgba(21, 19, 17, 0.35);;
+    padding-top: 20px;
+    /* Adjust as needed */
+}
+
+.secondSection {
+    margin: 0 113px;
+
+}
+
+.leftSection {
+
+    margin: 23px;
+
+}
+
+
+.secondSection img {
+    opacity: 78%;
+    width: 8%;
+}
+
+.leaf1 {
+    margin: 20px;
+    margin-top: -10cap;
+}
+
+.leaf2 {
+    margin: 20px;
+}
+
+.pad-krish {
+    font-family: 'Tiro Devanagari Hindi', serif;
+    margin: 14px;
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.758);
+}
+
+.thirdSection {
+    display: flex;
+    margin: 0 113px;
+    margin-top: -39px;
+
+}
+/* Krishna pad page */
+.krishna-pad {
+    display: flex;
+    margin: auto;
+    max-width: 82vw;
+    height: 85px;
+    margin-top: 34px;
+    margin-bottom: 23px;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-weight: lighter;
+
+
+}
+.krishna-pad h3{
+    font-size: 1.4rem;
+    color: white;
+    transition: transform 0.3s;
+    transition: 0.5s;
+}
+.krishna-pad h3:hover{
+    transform: scale(1.0909);
+    color: rgba(21, 19, 17, 0.80);
+}
+.krishna-pad span{
+    color: white
+}
+.krishna-pad-img{
+    max-width: 10%;
+}
+.krishna-pad-img img{
+    margin: 10px;
+    width: 62%;
+}
+.hr{
+    margin:auto;
+    max-width: 82vw;
+    
+}
+.content-krishna-pad{
+    align-self: center;
+    margin-left: 0;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    height: 55px;
+    /* background-color: red; */
+}
+.footer img{
+   width: 17.5%;
+}
+/* poems */
+.poem{
+    margin: auto;
+    max-width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.poemsp{
+    color: black;
+    font-size: 1.35rem;
+    margin: 25px;
+    font-weight: normal;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    z-index: 33;
+}
+.autho{
+    text-align: right;
+    font-size: 1.4rem;
+    position: absolute;
+    z-index: 21;
+
+}
+.titlepoem-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vw;
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Amita', cursive;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(14, 8, 6);
+}
+
+.hr-poem{
+    margin:auto;
+    max-width: 52vw;
+    background: black ;
+    height: 2px;
+    border: none;
+    
+}
+.handi{
+    width: 45%;
+}
+.lefttitle{
+    width: 70%;
+
+}
+.righttitle{
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: -25px;
+}
+.vyakhya{
+    font-weight: bolder;
+    font-size: 1.6rem;
+    color: black;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    text-align: left;
+    align-self: flex-start;
+    
+    
+} 
+.left img{
+    width:15%;
+   
+}
+
+.rig{
+    background-color: #ac8c614f;
+    display: flex;
+
+}
+
+/*  */
+.about-about{
+    color: rgba(21, 19, 17, 0.893);
+    font-weight: bolder;
+}
+/*  */
+.about-intro{
+    margin-top: -23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-intro-left{
+    font-size: 2.5rem;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    -webkit-text-stroke: 1.9px rgba(1, 3, 5, 22.894);
+    margin-right: -7px;
+    color: transparent;
+    
+    
+}
+#englishText{
+    color:rgba(21, 19, 17, 0.80); 
+}
+#hindiText{
+    font-size: 1.37rem;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    margin-top: 16px;
+    color:rgba(21, 19, 17, 0.80); 
+}
+.about-intro-right img{
+    width: 40%;
+    display: flex;
+    margin-inline: auto;
+    
+}
+#bhakt{
+    
+    font-family: 'Tiro Devanagari Hindi', serif;
+    -webkit-text-stroke: 1.4px rgba(0, 0, 0, 0.854);
+    font-size: 2rem;
+    color: transparent;
+    
+    display: flex;
+    margin-top: -87px;
+    justify-content: right;
+    
+}
+
+.write-sec-about{
+    max-width: 90vw;
+    margin: auto;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.804);
+    font-weight: bolder;
+    align-self: auto;
+    text-align: center;
+
+}
+#welco{
+    font-family: 'Caveat', sans-serif;
+    -webkit-text-stroke: 0.4px rgba(0, 0, 0, 0.854);
+    font-size: 2rem;
+    color: transparent;
+}
+
+/* CSS for the loading spinner */
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid transparent;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+    z-index: 9999;
+}
+
+/* CSS animation for the loading spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.login-sec{
+    display: flex;
+
+}
+
+.photu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+}
+.photo-img{
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+.swag{
+    font-size: 3.5rem;
+    font-family: 'Amita', cursive;
+    -webkit-text-stroke: 1.7px black;
+    color: transparent;
+}
+
+.alert-box{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: rgba(21, 19, 17, 0.31);
+    border-top: 10px solid rgba(21, 19, 17, 0.71);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    transition: 1s;
+    z-index: 987;
+}
+

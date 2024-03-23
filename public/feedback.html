@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300&family=Raleway:ital,wght@1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+   <style>
+.head-feed{
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 12px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: rgba(21, 19, 17, 0.79);
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.07rem;
+}
+
+.mid-feed{
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.ques{
+
+    font-size: 1.280rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: rgba(21, 19, 17, 1.09);
+    
+
+}
+.encountered-issues{
+    border: 0.8px solid rgba(21, 19, 17, 0.70);
+
+    font-size: 1.3rem;
+    text-align: center;
+  
+  align-items: center;
+  font-family: 'Libre Baskerville', serif;
+
+    border-radius: 15px;
+    border-style: outset;
+    border-bottom-width: initial;
+    background: rgba(255, 255, 255, 0.162);
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+.encountered-issues:hover{
+    background: rgba(255, 255, 255, 0.522);
+}
+.encountered-issues:focus{
+    background: rgba(255, 255, 255, 0.522);
+}
+.mid-feed{
+    border: 0.8px solid rgba(21, 19, 17, 0.70);
+    border-radius: 19.5px;
+    
+    
+    border-style: inset;
+    border-bottom-width: initial;
+    
+}
+.form-feed{
+    margin: 8px;
+    padding: 8px;
+}
+.submi{
+    background: rgba(255, 255, 255, 0.161);
+    width: auto;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 2px 1px;
+    padding: 6px 12px;
+    font-size: 1.292rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: bolder;
+    border-radius: 15px;
+    border: 0.8px solid rgba(21, 19, 17, 0.70);
+    border-radius: 15px;
+    border-style: outset;
+    border-bottom-width: initial;
+    transition: 0.34s;
+    
+    
+}
+.submit-feed{
+    text-align: right;
+    align-items: end;
+    display: flex;
+    max-width: 30vw;
+    margin: auto;
+    margin-top: 12px;
+    
+    justify-content: center;
+}
+.submi:hover{
+    background: rgba(255, 255, 255, 0.522);
+}
+
+.alert-box{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: rgba(21, 19, 17, 0.31);
+    border-top: 10px solid rgba(21, 19, 17, 0.71);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    transition: 1s;
+    z-index: 989;
+}
+   </style>
+</head>
+
+<body>
+    <div class="alert-box">
+        <p class="alert"></p>
+    </div>
+    <header>
+        <nav>
+            <div class="left"><img id="logo-img" src="logo2.png" alt=""></div>
+            <div class="rig">
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="about-about" href="feedback.html">Feedback</a>
+                    </li>
+                    <li>
+                        <a href='/admin'>Feedback Reviews</a>
+                    </li>
+                    <li>
+                        <a id="logou" href="publish.html">Publish</a>
+                    </li>
+                </ul>
+            </div>
+           
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- <section>
+            <div class="login-sec">
+            
+            <div class="form">
+                <h1 class="heading">Register</h1>
+                <input type="text" placeholder="Name" autocomplete="off" class="name" required>
+                <input type="email" placeholder="Email" autocomplete="off" class="email" required>
+                <input type="password" placeholder="Password" autocomplete="off" class="password" required>
+                <button class="submit-btn">Register</button>
+                <a href="login.html" class="link">Already have an account ? Log In here</a>
+            </div>
+    </div>
+    </section> -->
+    
+        <section id="feedback-form">
+            <div class="head-feed">
+            <h2>We value your thoughts!</h2>
+            <h4>Thank you for visiting our website. Please take a moment to share your thoughts with us.</4>
+
+            </div>
+            <div class="mid-feed">
+                <form class="form-feed" action="/submit-feedback" method="POST">
+                    <label class="ques" for="resonated-authors">Name</label><br>
+                    <textarea id="resonatedAuthors" name="resonatedAuthors" class="encountered-issues" rows="1" cols="20vw"></textarea><br>
+                
+                    <label class="ques" for="experience">In your opinion, how well does the content capture the essence and cultural richness of Nepal?(1-10)
+                    </label><br>
+                    <textarea name="experience" id="experience" class="encountered-issues" rows="1" cols="40vw"></textarea><br>
+                
+                    <label class="ques" for="krishna-poem">Are there specific topics or types of content you would like to see added to the website?</label><br>
+                    <textarea name="krishnaPoem" id="krishnaPoem" class="encountered-issues" rows="2" cols="70vw"></textarea><br>
+                
+                    <label class="ques" for="suggestions">Do you have any suggestions or ideas to enhance your experience on our website?</label><br>
+                    <textarea name="suggestions" id="suggestions" class="encountered-issues" rows="2" cols="50vw"></textarea><br>
+                
+                    <label class="ques" for="krishh">Based on your experience, how likely are you to return to the website in the future?(1-10)</label><br>
+                    <textarea name="krishh" id="krishh" class="encountered-issues" rows="1" cols="30vw"></textarea><br>
+                
+                    <div class="submit-feed">
+                        <button id="subb" class="submi" type="submit">Submit</button>
+                    </div>
+                </form>
+                
+        </div>
+        </section> 
+    </main>
+    <script src="index.js"></script>
+ <script>
+    const resonatedAuthors = document.getElementById("resonatedAuthors");
+    const experience = document.getElementById("experience");
+    const krishnaPoem = document.getElementById("krishnaPoem");
+    const suggestions = document.getElementById("suggestions");
+    const krishh = document.getElementById("krishh");
+    
+
+    
+   const submitBtn = document.querySelector('.submi');
+
+submitBtn.addEventListener('click', (event) => {
+   event.preventDefault();// Prevent the default form submission behavior
+
+    fetch('/submit-feedback', {
+        method: 'post',
+        headers: new Headers({ 'Content-Type': 'application/json' }),
+        body: JSON.stringify({
+            resonatedAuthors: resonatedAuthors.value,
+    experience:experience.value,
+    krishnaPoem:krishnaPoem.value,
+    suggestions:suggestions.value,
+    krishh:krishh.value
+        })
+    })
+    .then(() => {
+        // Display a custom alert message
+        showAlert('Feedback submitted successfully');
+
+        // Optionally, you can reset the form
+        document.querySelector('.form-feed').reset();
+    });
+});
+
+function showAlert(message) {
+    const alertContainer = document.querySelector('.alert-box');
+    const alertMsg = document.querySelector('.alert');
+    alertMsg.innerHTML = message;
+
+    alertContainer.style.top = `5%`;
+    setTimeout(() => {
+        alertContainer.style.top = null;
+    }, 5000);
+}
+
+ </script>
+
+   
+</body>
+
+</html>

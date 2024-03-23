@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300&family=Raleway:ital,wght@1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amita&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+</head>
+
+<body>
+    <div class="loading-spinner"></div>
+    <header>
+        <nav>
+            <div class="left"><img id="logo-img" src="logo2.png" alt=""></div>
+            <div class="rig">
+                <div class="right">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="about-about" href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="feedback.html">Feedback</a>
+                        </li>
+                        <li>
+                            <a href='/admin'>Feedback Reviews</a>
+                        </li>
+                        <li>
+                            <a href="publish.html">Publish</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <div class="m-auto m-width about-intro">
+                <div class="about-intro-left">
+                    <p>नेपाल</p>
+                </div>
+                <div class="about-intro-right"><img src="krishna-about.png" alt=""><span id="bhakt">-एक प्रेम</span>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="poetry-inspiration">
+            <div class="write-sec-about">
+
+                <p id="englishText" style="display: block;">
+                    "Nepal, The country that saw my first cry and the country, i saw covered with mountains, peaceful
+                    mountains. Paving the way for my soul to find solace in its lap. That's where comes the title,
+                    "Pheri Bhaitaula Nepal" which literally translates to See You Again Nepal! This website is a tribute
+                    to my country, in which i have tried to cover a little of the profound cultural impact i have from
+                    my birthplace. Making it felt like walking on the roads of nepal mountains and maybe exploring the
+                    site carries the same vibe from which it has been made."<br><span id="puja">-Lakshmi Kumari Gupta</span></p>
+                <p id="hindiText" style="display: none;">
+                    "नेपाल, जसले मेरो पहिलो रोइएको देश थाँथ्यो, र जसले मैले शान्तिपूर्ण
+                    पर्वतहरूले ढाकेको देश बनेको थियो। मेरो आत्मा लागि त्यसको गोदमा शान्ति पाइएको थियो। तलका शीर्षक,
+                    "फेरि भैतौला नेपाल" आउँछ, जुन शाब्दिक रूपमा "तिमीलाई फेरि देखौं नेपाल" हो। यो वेबसाइट मेरो देशको एक
+                    श्रद्धाञ्जलि हो, जसमा मैले मेरो जन्मस्थानबाट पारंपरिक प्रभावको केहि छोटो भाग कवर गरेको छ। यो यत्रा
+                    गरेको बेला नेपालका पर्वतमा बगेर हेरिरहनुपर्छ र शायद साइट खोजी गर्दा त्यसले बनाइएको वातावरणले आफ्नो
+                    पर्वतहरूमा हेरेकोबाट समान भावना लिएको हुनसक्छ।"<br><span id="puja">-लक्ष्मी कुमारी
+                        गुप्ता</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Add more sections as needed, such as "Artistic Journey," "Philosophical Beliefs," and "Creative Process." -->
+
+    </main>
+    <script src="index.js"></script>
+    <script> const eng = document.getElementById("englishText");
+        const hin = document.getElementById("hindiText");
+        eng.addEventListener("mouseover", function () {
+            eng.style.cursor = "pointer";
+        });
+        eng.addEventListener("click", function () {
+
+            eng.style.display = "none";
+            hin.style.display = "block";
+
+        });
+        hin.addEventListener("mouseover", function () {
+            hin.style.cursor = "pointer";
+        });
+        hin.addEventListener("click", function () {
+
+
+            hin.style.display = "none";
+            eng.style.display = "block";
+
+        });</script>
+</body>
+
+</html>

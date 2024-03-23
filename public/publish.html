@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300&family=Raleway:ital,wght@1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .login-sec{
+            display: flex;
+    justify-content: center;
+    align-items: center;;
+        }
+        .publish-form{
+            display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    align-items: center;
+
+    margin-top: 35px;
+}
+       .heading-pub{
+        color: rgba(21, 19, 17, 0.71);
+    font-weight: bolder;
+    font-family: 'Libre Baskerville', serif;
+    margin-left: 22px;
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 31px;
+       } 
+       .publish-name{
+        background: rgba(255, 255, 255, 0.160);
+        border: 0.8px solid rgba(21, 19, 17, 0.70);
+    border-radius: 15px;
+    border-style: outset;
+    border-bottom-width: initial;
+    transition: 0.32s;
+    transition-timing-function: ease-in-out;
+       }
+       .publish-name:hover{
+        background: rgba(255, 255, 255, 0.525);
+       }
+       .publish-name:focus{
+       background: rgba(255, 255, 255, 0.525);
+       }
+.ques{
+    color: rgba(21, 19, 17, 0.81);
+    font-size: 1.3rem;
+    margin-left: 4px;
+
+    font-family: 'Libre Baskerville', serif;
+}
+.submit-feed{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 28px;
+}
+.submi{
+    background: rgba(255, 255, 255, 0.160);
+    width: auto;
+    border: 0.8px solid rgba(21, 19, 17, 0.70);
+    border-radius: 15px;
+    border-style: outset;
+    border-bottom-width: initial;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 2px 1px;
+    padding: 8px 16px;
+    font-size: 1.092rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    
+    border-radius: 15px;
+    transition: 0.3s;
+    
+}
+.submi:hover{
+    background: rgba(255, 255, 255, 0.525);
+}
+.link{
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.836);
+    font-weight: bolder;
+    display: block;
+    margin: 20px;
+    
+}
+
+.link:hover{
+    
+    color: rgba(21, 19, 17, 0.631);
+}
+.publish-name{
+  text-align: center;
+  font-size: 1.15rem;
+  align-items: center;
+  font-family: 'Libre Baskerville', serif;
+}
+    </style>
+</head>
+
+<body>
+    <div class="alert-box">
+        <p class="alert"></p>
+    </div>
+    <div class="loading-spinner"></div>
+    <header>
+        <nav>
+            <div class="left"></div>
+            <div class="rig">
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">Feedback</a>
+                    </li>
+                    <li>
+                        <a href='/admin'>Feedback Reviews</a>
+                    </li>
+                    <li>
+                        <a class="about-about" id="pub" href="publish.html">Publish</a>
+                    </li>
+                </ul>
+            </div>
+           
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="login-sec">
+        <div class="photu"><img class="photo-img" src="logo2.png" alt=""><p class="swag">स्वागतम</p></div>
+    <div class="publish-form">
+        <h1 class="heading-pub">Publish</h1>
+        <form class="form-feed" action="/submit-publish" method="POST">
+            <label class="ques" for="name">Name</label><br>
+            <textarea id="names" name="name" class="publish-name" rows="1" cols="45vw"></textarea><br>
+        <br>
+            <label class="ques" for="poem">If you ever visited Nepal, Tell us stories about your visit</label><br>
+            <textarea name="poem" id="poems" class="publish-name" rows="4" cols="45vw"></textarea><br>
+        
+            
+            <div class="submit-feed">
+                <button id="subb" class="submi" type="submit">Submit</button>
+            </div>
+        </form>
+        <!-- <input type="text" placeholder="Name" autocomplete="on" class="name" required>
+        <input type="text" placeholder="Send us if you have any stories/poems" autocomplete="off" class="poem-pub" required>
+        <button class="submit-btn">Send</button> -->
+        <a href='\published' class="link">Want to read users stories</a>
+    </div>
+</div>
+</section>
+
+    
+    <script src="index.js"></script>
+    <script>
+        const name = document.getElementById("names");
+        const poem = document.getElementById("poems");
+    
+        
+       const submitBtn = document.querySelector('.submi');
+    
+    submitBtn.addEventListener('click', (event) => {
+       event.preventDefault();// Prevent the default form submission behavior
+    
+        fetch('/submit-publish', {
+            method: 'post',
+            headers: new Headers({ 'Content-Type': 'application/json' }),
+            body: JSON.stringify({
+                name: name.value,
+        poem:poem.value
+            })
+        })
+        .then(() => {
+            // Display a custom alert message
+            showAlert('Feedback submitted successfully');
+    
+            // Optionally, you can reset the form
+            document.querySelector('.form-feed').reset();
+        });
+    });
+    
+    function showAlert(message) {
+        const alertContainer = document.querySelector('.alert-box');
+        const alertMsg = document.querySelector('.alert');
+        alertMsg.innerHTML = message;
+    
+        alertContainer.style.top = `5%`;
+        setTimeout(() => {
+            alertContainer.style.top = null;
+        }, 5000);
+    }
+    
+     </script>
+    
+</body>
+</html>
